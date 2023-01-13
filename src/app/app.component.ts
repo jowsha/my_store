@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mystore_my_works';
+  addproductlink(){
+    console.log("hi");
+    
+  }
 }

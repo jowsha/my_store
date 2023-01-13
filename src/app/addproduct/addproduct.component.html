@@ -1,0 +1,19 @@
+
+<app-navbar></app-navbar>.
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <h3>Add a Product</h3>
+            <form action="" [formGroup]="uploadForm" (ngSubmit)="addproducthandle()" enctype="multipart/form-data">
+                <input type="text" name="name" placeholder="product name" class="form-control mt-2" formControlName="name">
+                <input type="text" name="description" placeholder="description" class="form-control mt-2" formControlName="description">
+                <input type="text" name="category" placeholder="category" class="form-control mt-2" formControlName="category">
+                <input type="text" name="price" placeholder="price" class="form-control mt-2" formControlName="price">
+                <input type="file" name="image" id="image" class="form-control mt-2"  formControlName="image" >
+                <button type="submit" class="btn btn-info">add</button>
+           </form>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>

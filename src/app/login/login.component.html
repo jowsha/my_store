@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4 mt-5">
+            <form action="" [formGroup]="loginform" (ngSubmit)="loginsumbit()">
+                <input type="text" placeholder="username" class="form-control mt-2" formControlName="username">
+                <input type="password" class="form-control mt-2" placeholder="password" formControlName="password">
+                <button type="submit" class="btn btn-info mt-2">login</button>
+            </form>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>

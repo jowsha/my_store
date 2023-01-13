@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col-4" *ngFor="let p of product">
+            <div class="card" style="width: 18rem;">
+                <img src="{{p.image}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{p.name}}</h5>
+                  <p class="card-text">{{p.description}}</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">{{p.category}}</li>
+                  <li class="list-group-item">{{p.price}}</li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="btn btn-info ">more details</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
